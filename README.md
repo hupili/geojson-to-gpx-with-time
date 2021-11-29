@@ -11,3 +11,10 @@ Run the following command to generate gpx file.
 ```
 python3 togpx.py map.geojson map.gpx '2021-11-28 11:00 HKT' '2021-11-28 18:00 HKT'
 ```
+
+## Notes
+
+Strava's GPX has special requrements:
+
+* Special Datetime `%Y-%m-%dT%H:%M:%S+08:00`
+* First point time needs to be later than event time
